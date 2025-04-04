@@ -11,8 +11,11 @@ public class Mergesort {
     public static void mergesort(int A[] , int s , int e){
        if(s < e){
         int mid = (s+e)/2;
+        //by using the recursion splitting the first half of an array
         mergesort(A , s , mid);
+        //splitting in the second half of array
         mergesort( A, mid+1, e);
+        //calling the merge function and then merging the sorted one
         merge(A, s, mid, e);
     }
 }
@@ -43,6 +46,7 @@ public class Mergesort {
             p3++;
         }
         for(int i = s ; i <= e ; i++){
+            //i-s is for tracing the index of a temp array
             A[i] = temp[i - s];
         }
         return A;
