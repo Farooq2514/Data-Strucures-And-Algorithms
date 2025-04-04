@@ -5,6 +5,7 @@ public class equilibriumIndex {
      int A[] = {1,2,3,6,5};
      int n = A.length;
      System.out.println(A[n-2]);
+     //5 --> n == 4
 
     }
     public static int[] reverseArray(int A[]){
